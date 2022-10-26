@@ -1,0 +1,46 @@
+body {
+    color: red;
+}
+
+.navbar {
+    text-align: center;
+    color: blueviolet;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+
+}
+
+.card {
+    margin-top: 5%;
+    width: 25%;
+    background-color: rgb(177, 197, 197);
+    padding: 5%;
+    text-transform: uppercase;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.btn a,
+.btn2 a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn a {
+    color: black;
+}
+
+.btn1 {
+    background-color: orange;
+}
+
+.btn2 {
+    background-color: darkgreen;
+}

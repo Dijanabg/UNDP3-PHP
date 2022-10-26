@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja forma</title>
+</head>
+
+<body>
+    <h1>KUPOVINA KRIPTOVALUTA</h1>
+    <h2>Valuta: ETH</h2>
+    <form action="Potvrda.php" name="prva" method="POST">
+        <label for="ime">Vase ime:</label><br>
+        <input type="text" name="ime" id="ime" placeholder="Vase ime"><br>
+
+        <label for="prezime">Vase prezime: </label><br>
+        <input type="text" name="prezime" id="prezime" placeholder="Vase prezime"><br>
+
+        <label for="godina">Unesite godinu rodjenja</label><br>
+        <input type="number" name="godina" id="godina" min="1920" max="2003"><br>
+        <label for="pol">Izaberite pol</label><br>
+        <label for="muski">Muski</label>
+        <input type="radio" name="pol" id="m" value="muski">
+
+        <label for="zenski">Zenski</label><br>
+        <input type="radio" name="pol" id="z" value="zenski"><br>
+
+        <label for="placanje">Izabrite nacin placanja</label><br>
+        <select name="placanje" id="placanje">
+            <option value="VISA">VISA</option>
+            <option value="MASTER">MASTER</option>
+            <option value="CEK">CEK</option>
+            <option value="Crypto">Crypto</option>
+        </select><br>
+        <label for="kolicina">Odaberite kolicinu</label><br>
+        <input type="text" name="kolicina" id="kolicina" size="10"><br>
+        <input type="submit" name="potvrdi" id="potvrdi" value="POTVRDI TRANSAKCIJU">
+
+
+
+    </form>
+</body>
+
+</html>
