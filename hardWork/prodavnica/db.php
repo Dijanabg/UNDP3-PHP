@@ -6,7 +6,7 @@ $db = [
         "name" => "a3",
         "price" => 9000,
         "used" => true,
-        "info" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+        "info" => "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elitLorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.. "
     ],
     [
         "id" => 2,
@@ -14,7 +14,7 @@ $db = [
         "name" => "octavia",
         "price" => 11000,
         "used" => false,
-        "info" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+        "info" => "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elitLorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.. "
     ],
     [
         "id" => 3,
@@ -22,7 +22,7 @@ $db = [
         "name" => "a5",
         "price" => 18000,
         "used" => true,
-        "info" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+        "info" => "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elitLorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.. "
     ],
     [
         "id" => 4,
@@ -30,6 +30,6 @@ $db = [
         "name" => "fabia",
         "price" => 9000,
         "used" => false,
-        "info" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+        "info" => "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elitLorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.."
     ]
 ];
