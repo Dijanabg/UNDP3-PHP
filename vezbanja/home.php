@@ -34,27 +34,56 @@
                     </tr>
                 </thead>
                 <tbody>
-
-                    <tr>
-                        <td>____timID____</td>
-                        <td>____nazivTima____</td>
-                        <td>____drzava____</td>
-                        <td>____godinaOsnivanja____</td>
-                        <td>____brojTitula____</td>
-                        <td>
-                            <form action="" method="get">
-                                <input type="hidden" name="timID-izmeni" value="____timID____">
-                                <button id="btn-izmeni" class="btn" data-toggle="modal" data-target="#izmeniModal"><img src="image/edit.png" style="width: 25px;height: 25px;"></button>
-                            </form>
-                        </td>
-                        <td>
-                            <form action="" method="get">
-                                <input type="hidden" name="timID-izbrisi" value="____timID____">
-                                <button id="btn-izbrisi" type="submit" class="btn"><img src="image/delete.png" style="width: 25px;height: 25px;"></button>
-                            </form>
-                        </td>
-                    </tr>
-
+                    <?php
+                    if (!isset($_SESSION['timovi-search']))
+                        foreach ($_SESSION['timovi'] as $tim) {
+                    ?>
+                        <tr>
+                            <td><?php echo $tim["timID"] ?></td>
+                            <td><?php echo $tim["nazivTima"] ?></td>
+                            <td><?php echo $tim["drzava"] ?></td>
+                            <td><?php echo $tim["godinaOsnivanja"] ?></td>
+                            <td><?php echo $tim["brojTitula"] ?></td>
+                            <td>
+                                <form action="" method="get">
+                                    <input type="hidden" name="timID-izmeni" value="<?php echo $tim["timID"] ?>">
+                                    <button id="btn-izmeni" class="btn" data-toggle="modal" data-target="#izmeniModal"><img src="image/edit.png" style="width: 25px;height: 25px;"></button>
+                                </form>
+                            </td>
+                            <td>
+                                <form action="" method="get">
+                                    <input type="hidden" name="timID-izbrisi" value="<?php echo $tim["timID"] ?>">
+                                    <button id="btn-izbrisi" type="submit" class="btn"><img src="image/delete.png" style="width: 25px;height: 25px;"></button>
+                                </form>
+                            </td>
+                        </tr>
+                    <?php
+                        }
+                    else
+                        foreach ($_SESSION['timovi-search'] as $tim) {
+                    ?>
+                        <tr>
+                            <td>0<?php echo $tim["timID"] ?></td>
+                            <td><?php echo $tim["nazivTima"] ?></td>
+                            <td><?php echo $tim["drzava"] ?></td>
+                            <td><?php echo $tim["godinaOsnivanja"] ?></td>
+                            <td><?php echo $tim["brojTitula"] ?></td>
+                            <td>
+                                <form action="" method="get">
+                                    <input type="hidden" name="timID-izmeni" value="<?php echo $tim["timID"] ?>">
+                                    <button id="btn-izmeni" class="btn" data-toggle="modal" data-target="#izmeniModal"><img src="image/edit.png" style="width: 25px;height: 25px;"></button>
+                                </form>
+                            </td>
+                            <td>
+                                <form action="" method="get">
+                                    <input type="hidden" name="timID-izbrisi" value="<?php echo $tim["timID"] ?>">
+                                    <button id="btn-izbrisi" type="submit" class="btn"><img src="image/delete.png" style="width: 25px;height: 25px;"></button>
+                                </form>
+                            </td>
+                        </tr>
+                    <?php
+                        }
+                    ?>
                 </tbody>
             </table>
         </div>
