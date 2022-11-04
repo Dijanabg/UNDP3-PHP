@@ -9,8 +9,8 @@ session_destroy();
 //     $usernameCookie = $_COOKIE['username'];
 
 //     setcookie('email', $emailCookie, time() - 1);
-//     setcookie('password', $passwordCookie, time() - 60);
-//     setcookie('username', $usernameCookie, time() - 60);
+//     setcookie('password', $passwordCookie, time() - 1);
+//     setcookie('username', $usernameCookie, time() - 1);
 // }
 
 //DOMACI KOLACICI BRISANJE
